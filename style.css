@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(226, 228, 96, 0.72),
+      rgba(18, 201, 40, 0.955)
+    ),
+    url("./img/nature.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 100px 0px 100px 0px;
+
+}
+.card {
+  width: 208px;
+  height: 250px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin: 0px auto;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+.card:hover{
+  transform: scale(1.05, 1.05);
+}
+.inenerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.inenerCard>i{
+  font-size: 45px;
+  margin-top: 20px;
+  color:  rgba(18, 201, 40, 0.955);
+}
+.inenerCard > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+.inenerCard > h4 {
+  margin-top: 23px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(90, 83, 83);
+}
+.inenerCard > p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(90, 83, 83);
+}
